@@ -1,0 +1,2321 @@
+* {
+    padding: 0 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+
+    height: 1024px;
+    padding: 0 100px;
+    padding-top: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    background-image: url(../img/Heroimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;
+    border-bottom: var(--border);
+    position: relative;
+    position: fixed;
+    height: 100px;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.900);
+}
+
+header nav #menu {
+    font-size: 90px;
+
+    color: #fff;
+    display: none;
+}
+
+header nav #line {
+    width: 1px;
+    height: 86px;
+    background: #FFF;
+}
+
+header nav #navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    gap: 50px;
+
+
+}
+
+header nav #navegation a {
+    display: flex;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    transition: all 0.9s ease-in-out;
+
+}
+
+header nav #navegation a:hover {
+
+    color: #B7A17C;
+    transform: translateY(-2px);
+    border-bottom: solid 0.4px #B7A17C;
+
+}
+
+header #texttop {
+    display: flex;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+header #texttop #line1 {
+    display: flex;
+    width: 273px;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(153, 153, 153, 0.00) 0%, #FFF 100%);
+
+}
+
+header #texttop span {
+    display: flex;
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header #texttop #line2 {
+    display: flex;
+    width: 273px;
+    height: 5px;
+    background: linear-gradient(90deg, #FFF 0%, rgba(153, 153, 153, 0.00) 100%);
+
+}
+
+header h1 {
+
+    align-self: center;
+    color: rgba(232, 220, 196, 0.20);
+    text-align: center;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(232, 220, 196, 0.80);
+    font-family: "Bebas Neue";
+    font-size: 300px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+
+}
+
+header h2 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header p {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header #bottons {
+    display: flex;
+    height: 116px;
+    justify-content: center;
+    gap: 15px;
+    align-self: stretch;
+}
+
+header #bottons #botton1 {
+    display: flex;
+    width: 277px;
+    height: 60px;
+    padding: 0 5px 0 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    border-radius: 100px;
+    background: #6C1C07;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.5s ease-in-out;
+}
+
+header #bottons #botton1:hover {
+
+    transform: translateY(-2px);
+}
+
+header #bottons #botton2 {
+    display: flex;
+    width: 277px;
+    height: 60px;
+    padding: 0 5px 0 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    border-radius: 100px;
+    border-radius: 100px;
+    border: 3px solid #801C02;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.5s ease-in-out;
+}
+
+header #bottons #botton2:hover {
+    transform: translateY(-2px);
+}
+
+#seccionSobrenosotros {
+    display: flex;
+    height: fit-content;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background-color: #131313;
+}
+
+#seccionSobrenosotros img {
+    align-self: stretch;
+}
+
+#seccionSobrenosotros article h2 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+#seccionSobrenosotros article p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top: 5px solid #FFF;
+    border-bottom: 5px solid #FFF;
+    padding: 0 100px;
+}
+
+#seccionSobrenosotros article p span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+#seccionInfo {
+    display: flex;
+
+    padding: 58px 100px;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    background-image: url(../img/bosque.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#seccionInfo h2 {
+    align-self: stretch;
+
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionInfo h3 {
+    height: 48px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionInfo span {
+    height: 29px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionInfo p {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    display: flex;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+#seccionInfo article {
+    display: flex;
+    height: 335px;
+    justify-content: center;
+    align-items: center;
+    gap: 161px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+#seccionInfo article .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    align-self: center;
+
+}
+
+#seccionInfo article .info span {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+    align-self: center;
+
+
+}
+
+#seccionCategorias {
+    display: flex;
+
+    padding: 18px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #131313;
+}
+
+#seccionCategorias #textos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+#seccionCategorias #textos h2 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionCategorias #textos p {
+    height: 145px;
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionCategorias #textos h3 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionCategorias article {
+    display: flex;
+    height: 456px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+
+
+}
+
+#seccionCategorias article .categoria {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url(../img/decoracion.png);
+    background-repeat: no-repeat;
+
+
+}
+
+#seccionCategorias article .categoria .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+
+}
+
+#seccionCategorias article .categoria .info h4 {
+    align-self: stretch;
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionCategorias article .categoria .info h3 {
+    align-self: stretch;
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionCategorias article .categoria .info p {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+#seccionCategorias h2 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seccionZonas {
+    display: flex;
+    height: fit-content;
+    padding: 100px 100px 100px 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    background-image: url(../img/zonas/tarrazumain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+
+}
+
+.seccionZonas .todocontent {
+    display: flex;
+
+    flex-direction: column;
+    gap: 150px;
+
+
+}
+
+.seccionZonas .todocontent .text {
+    display: flex;
+    width: 883px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+.seccionZonas .todocontent .text h2 {
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seccionZonas .todocontent .text p {
+    width: 563px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seccionZonas .todocontent .text .btnExplorar {
+    display: flex;
+    width: 277px;
+    height: 60px;
+    padding: 0 5px 0 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    border-radius: 100px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #B7A17C 0%, #E8DCC4 95.2%);
+    border-radius: 100px;
+    background: linear-gradient(90deg, #B7A17C 0%, #E8DCC4 95.2%);
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.seccionZonas .paisajes {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+
+    margin-bottom: 50px;
+    height: 200px;
+
+
+}
+
+.seccionZonas .paisajes img {
+    transition: all 0.5s ease-in-out;
+}
+
+.seccionZonas .paisajes img:hover {
+    transform: scale(1.03);
+}
+
+.seccionRutas {
+
+    display: flex;
+    height: 1024px;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(19, 19, 19, 0.40) 0%, rgba(19, 19, 19, 0.40) 100%), url(../img/zonas/tarrazurutamain.png) lightgray 50%;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+
+}
+
+.seccionRutas article {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.seccionRutas article .info {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.seccionRutas article .info h2 {
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seccionRutas article .info ul {
+    width: 304px;
+    flex-shrink: 0;
+}
+
+.seccionRutas article .info ul li span {
+    width: 304px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.seccionRutas article .info ul li {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.seccionRutas article .info a {
+    display: flex;
+    width: 226px;
+    height: 60px;
+    padding: 0 5px 0 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #B7A17C 0%, #E8DCC4 95.2%);
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.seccionRutas article h3 {
+    display: flex;
+    width: 593px;
+    height: 880px;
+    /* padding: 793px 24px 10px 357px; */
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 7px solid #FFFAFA;
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /* background-image: url(../img/zonas/tarrazuRuta.png); */
+
+}
+
+.seccionRutas p {
+    display: flex;
+    width: 291px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+.seccionExperencia {
+
+    width: 100%;
+    min-height: 1000px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: #131313;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+
+
+.seccionExperencia .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 4;
+}
+
+.seccionExperencia .text h2 {
+    color: #FFFAFA;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(55px, 7vw, 96px);
+    font-weight: 400;
+    margin: 0;
+}
+
+.seccionExperencia .text span {
+    color: #FFFAFA;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(22px, 3.5vw, 48px);
+    font-weight: 400;
+}
+
+.seccionExperencia .text h3 {
+    color: #FFFAFA;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+
+.seccionExperencia .imagenesExperencias {
+    width: 100%;
+
+
+    width: 100%;
+    display: flex;
+
+    gap: 15px;
+}
+
+
+
+.seccionExperencia .imagenesExperencias img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.seccionExperencia p {
+    width: 700px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(15px, 1.6vw, 20px);
+    line-height: 1.7;
+    margin: 10px 0 30px;
+    z-index: 3;
+}
+
+
+
+
+
+
+#seccionPratrocinadores {
+    display: flex;
+
+    padding: 0 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #B7A17C;
+
+}
+
+#seccionPratrocinadores h2 {
+    align-self: stretch;
+    color: #131313;
+    text-align: center;
+
+    font-family: "Bebas Neue";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+#seccionPratrocinadores h3 {
+    align-self: stretch;
+    color: #131313;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+#seccionPratrocinadores p {
+    align-self: stretch;
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#seccionPratrocinadores img {
+    display: flex;
+    align-self: stretch;
+
+}
+
+#seccionUniforme {
+    display: flex;
+
+    padding: 0 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: -336px;
+    position: relative;
+    background-color: #B7A17C;
+    overflow: hidden;
+    height: fit-content;
+
+}
+
+#seccionUniforme h2 {
+    display: flex;
+
+    height: 552px;
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: 450px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: normal;
+}
+
+
+#seccionUniforme article {
+    margin-top: -300px;
+    align-self: stretch;
+    height: fit-content;
+    display: flex;
+    height: 905px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+
+}
+
+#seccionUniforme #info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    z-index: 1;
+    height: fit-content;
+}
+
+#seccionUniforme #info1 h3 {
+    align-self: stretch;
+    color: #131313;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionUniforme img {
+    z-index: 1;
+
+}
+
+#seccionUniforme #info1 p {
+    height: 318px;
+    align-self: stretch;
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#seccionUniforme #info2 {
+    display: flex;
+    width: 420px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    z-index: 1;
+    height: f;
+}
+
+#seccionUniforme #info2 h3 {
+    align-self: stretch;
+    color: #131313;
+    font-family: "Bebas Neue";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seccionUniforme #info2 p {
+    width: 274px;
+    height: 135px;
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 1;
+}
+
+#seccionUniforme #forma {
+    background-image: url(../img/uniforme/formaelipce.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 800px;
+}
+
+#seccionFanzone {
+    display: flex;
+    height: 1304px;
+    padding: 0 41px 0 72px;
+    align-items: center;
+    gap: -200px;
+    background: #131313;
+}
+
+#seccionFanzone article {
+
+    height: 1065.882px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+#seccionFanzone article #fanzone1 {
+    width: 788px;
+    height: 992px;
+    transform: rotate(-3.461deg);
+    aspect-ratio: 85/107;
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    cursor: pointer;
+    left: 300px;
+    transition: all 1s;
+}
+
+#seccionFanzone article #fanzone2 {
+    width: 691.329px;
+    height: 871.848px;
+    transform: rotate(15deg);
+    aspect-ratio: 157/198;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 450px;
+    color: #000;
+    filter: brightness(60%);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#seccionFanzone article #fanzone2:hover {
+
+    transform: scale(1.08) rotate(20deg);
+}
+
+#seccionFanzone article #fanzone1:hover {
+
+    transform: scale(1.08);
+}
+
+#seccionFanzone article #fanzone3 {
+    width: 619.671px;
+    height: 780.359px;
+    transform: rotate(-15deg);
+    aspect-ratio: 27/34;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 10px;
+    filter: brightness(40%);
+    cursor: pointer;
+}
+
+#seccionFanzone p {
+    align-self: stretch;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    width: 302px;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    z-index: 5;
+}
+
+
+
+
+
+
+#seccionGaleria {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px clamp(20px, 6vw, 100px);
+    background-color: #B7A17C;
+}
+
+
+
+#seccionGaleria h2 {
+    width: 100%;
+    margin: 0;
+    color: #131313;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(64px, 9vw, 128px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+#seccionGaleria h3 {
+    width: 100%;
+    margin: 10px 0 40px;
+    color: #131313;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(25px, 48px, 48px);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+
+#seccionGaleria #imagenestodo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1240px;
+    border: solid #FFF;
+}
+
+
+#seccionGaleria #imagenestodo article {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+#seccionGaleria #text {
+
+    display: flex;
+    flex: 1 1 50%;
+    min-width: 0;
+    min-height: 526px;
+    padding: clamp(20px, 40px, 40px);
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#seccionGaleria #imagenestodo #senderos #text {
+    background-image: url("../img/galeria/sendero1.png");
+    border: solid #FFF;
+}
+
+#seccionGaleria #imagenestodo #montañas #text {
+    background-image: url("../img/galeria/montaña1.png");
+    border: solid #FFF;
+}
+
+#seccionGaleria #imagenestodo #rios #text {
+    background-image: url("../img/galeria/rio2 (3).png");
+    border: solid #FFF;
+}
+
+#seccionGaleria #imagenestodo #cafe #text {
+    background-image: url("../img/galeria/cafe (1).png");
+    border: solid #FFF;
+}
+
+
+#seccionGaleria #imagenestodo #text h4 {
+    margin: 0 0 10px;
+    width: 100%;
+
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: clamp(55px, 8vw, 128px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+#seccionGaleria #imagenestodo #text p {
+    margin: 0;
+    max-width: 400px;
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(15px, 1vw, 24px);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+
+
+#seccionGaleria #imagenestodo #imagenes {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    min-width: 0;
+}
+
+#seccionGaleria #imagenestodo #imagenes img {
+    display: block;
+    width: 100%;
+    height: 263px;
+    object-fit: cover;
+}
+
+
+
+#seccionFormulario {
+
+    width: 100%;
+
+    display: flex;
+    align-items: stretch;
+    gap: clamp(25px, 4vw, 52px);
+
+    padding-right: clamp(25px, 6vw, 95px);
+}
+
+#seccionFormulario #fondo {
+
+
+    display: flex;
+    width: 42%;
+
+    padding: 50px 25px;
+
+    flex-direction: column;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    background-image: url("../img/formulario/fotoinfo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#seccionFormulario #fondo h2 {
+    margin: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(65px, 7vw, 96px);
+    font-weight: 400;
+}
+
+#seccionFormulario #fondo h3 {
+    margin: 10px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(30px, 3.5vw, 48px);
+    font-weight: 400;
+}
+
+
+#seccionFormulario form {
+
+
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    padding: 35px 0;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+#seccionFormulario form h2 {
+    margin: 0;
+
+    color: #000;
+    font-family: "Bebas Neue";
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 400;
+}
+
+
+
+#seccionFormulario form #talla {
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+#seccionFormulario form label {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(17px, 2vw, 25px);
+    font-weight: 400;
+}
+
+
+
+#seccionFormulario form input {
+
+    width: 100%;
+    min-width: 0;
+    height: 55px;
+
+    padding: 10px 14px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+#seccionFormulario form select {
+
+    width: 100%;
+    min-width: 0;
+    height: 55px;
+
+    padding: 10px 14px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+
+
+#seccionFormulario form #talla select {
+    max-width: 300px;
+}
+
+
+
+#seccionFormulario form #categoriapago {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+#seccionFormulario form #categoria {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+#seccionFormulario form #pago {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+
+}
+
+
+
+
+
+#seccionFormulario form a {
+    display: flex;
+    width: fit-content;
+    min-width: 220px;
+    min-height: 55px;
+
+    padding: 10px 20px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(#B7A17C 0%, #E8DCC4 95.2%);
+
+    color: #131313;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#seccionFormulario form a:hover {
+    transform: translateY(-3px);
+
+}
+
+
+
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 50px clamp(20px, 7vw, 100px);
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background: #131313;
+    text-align: center;
+}
+
+
+footer h2 {
+    width: 100%;
+    margin: 0;
+    color: #E8DCC4;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 400;
+}
+
+
+footer #infotodo {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+footer #infotodo .info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+footer #infotodo .info h3 {
+    margin: 0 0 10px;
+    color: #E8DCC4;
+    font-family: "Bebas Neue";
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 400;
+}
+
+footer #infotodo .info a {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(14px, 1.5vw, 20px);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer #infotodo .info a:hover {
+    color: #B7A17C;
+    transform: translateY(-1px);
+}
+
+footer #infotodo img {
+    width: clamp(100px, 15vw, 180px);
+    height: auto;
+    object-fit: contain;
+}
+
+
+footer #linea {
+    width: 100%;
+    height: 2px;
+    background: #FFFCED;
+}
+
+
+footer #infoabajo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+footer #infoabajo h3 {
+    margin: 0;
+    color: #E8DCC4;
+    font-family: "Bebas Neue";
+    font-size: clamp(65px, 13vw, 160px);
+    font-weight: 400;
+    line-height: 1;
+}
+
+footer #infoabajo #redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+footer #infoabajo #redes a i {
+    color: #E8DCC4;
+    font-size: clamp(25px, 4vw, 40px);
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+footer #infoabajo #redes a:hover i {
+    color: #B7A17C;
+    transform: translateY(-1px);
+}
+
+
+footer p {
+    width: 100%;
+    margin: 0;
+    color: #E8DCC4;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+footer p span {
+    color: #B7A17C;
+}
+
+
+@media (max-width: 768px) {
+
+    header h1 {
+
+        align-self: center;
+        color: rgba(232, 220, 196, 0.20);
+        text-align: center;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: rgba(232, 220, 196, 0.80);
+        font-family: "Bebas Neue";
+        font-size: 200px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+
+    }
+    
+    
+     header nav #navegation  {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        top: -400px;
+        right: 0;
+        padding: 20px;
+        background-color: #000000;
+        transition: all .3s ease-in-out
+    }
+
+    header nav #navegation.active{
+        top: 120px;
+          right: 0;
+    }
+
+    header nav #menu {
+        font-size: 90px;
+        color: #fff;
+        display: flex;
+        cursor: pointer;
+    }
+
+    #seccionInfo {
+        display: flex;
+        height: fit-content;
+        padding: 58px 100px;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 100px;
+        background-image: url(../img/bosque.png);
+        background-size: cover;
+        background-position: center;
+
+
+    }
+
+    #seccionInfo article .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    #seccionCategorias #textos p {
+        height: 500px;
+    }
+
+    #seccionCategorias article {
+        display: flex;
+        height: 456px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        align-self: stretch;
+        flex-direction: column;
+
+
+    }
+
+    #seccionCategorias {
+        display: flex;
+
+        padding: 18px 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 350px;
+        background: #131313;
+    }
+
+    .seccionRutas article h3 {
+        display: flex;
+        width: 593px;
+        height: 880px;
+        /* padding: 793px 24px 10px 357px; */
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border: 7px solid #FFFAFA;
+        color: #FFF;
+        font-family: "Bebas Neue";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-image: url(../img/zonas/tarrazuRuta.png);
+        /* background-image: url(../img/zonas/tarrazuRuta.png); */
+
+    }
+
+    #seccionPratrocinadores h2 {
+        align-self: stretch;
+        color: #131313;
+        text-align: center;
+
+        font-family: "Bebas Neue";
+        font-size: 108px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+    }
+
+    #seccionUniforme h2 {
+        display: flex;
+
+        height: 300px;
+        color: #000;
+        font-family: "Bebas Neue";
+        font-size: 200px;
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        line-height: normal;
+        margin-bottom: 200px;
+    }
+
+    #seccionUniforme {
+        display: flex;
+
+        padding: 0 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: -336px;
+        position: relative;
+        background-color: #B7A17C;
+        overflow: hidden;
+        height: 1700px;
+
+    }
+
+    #seccionUniforme #forma {
+        background-image: url(../img/uniforme/formaelipce.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 1200px;
+    }
+
+    /* cambios para seccion fanzone */
+
+
+    #seccionFanzone {
+        display: flex;
+        height: 1304px;
+        padding: 0 41px 0 72px;
+        align-items: baseline;
+        gap: -200px;
+        background: #131313;
+    }
+
+    #seccionFanzone article {
+
+        height: 1065.882px;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    #seccionFanzone article #fanzone1 {
+        width: 788px;
+        height: 992px;
+        transform: scale(0.65) rotate(-3.461deg);
+        aspect-ratio: 85/107;
+        position: absolute;
+        z-index: 3;
+        top: 10px;
+        cursor: pointer;
+        left: -10px;
+        transition: all 1s;
+    }
+
+    #seccionFanzone article #fanzone2 {
+        width: 691.329px;
+        height: 871.848px;
+        transform: scale(0.60) rotate(15deg);
+        aspect-ratio: 157/198;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: 0px;
+        color: #000;
+        filter: brightness(60%);
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    #seccionFanzone article #fanzone2:hover {
+
+        transform: scale(0.65) rotate(20deg);
+    }
+
+    #seccionFanzone article #fanzone1:hover {
+
+        transform: scale(0.75);
+    }
+
+    #seccionFanzone article #fanzone3 {
+        width: 619.671px;
+        height: 780.359px;
+        transform: scale(0.55) rotate(-15deg);
+        aspect-ratio: 27/34;
+        position: absolute;
+        z-index: 1;
+        left: 0px;
+        top: 10px;
+        filter: brightness(40%);
+        cursor: pointer;
+    }
+
+    #seccionFanzone p {
+        align-self: stretch;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        width: 600px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        margin-bottom: 50px;
+        z-index: 5;
+    }
+
+
+
+
+}
+
+@media (max-width: 390px) {
+
+    header {
+        display: flex;
+
+        height: 1024px;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        background-image: url(../img/Heroimg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    header nav {
+        display: flex;
+        height: 135px;
+        padding: 10px 0px;
+        align-items: center;
+        gap: 50px;
+        justify-content: space-between;
+        align-self: stretch;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        align-self: stretch;
+
+    }
+
+    header #texttop #line1 {
+        display: none;
+        width: 273px;
+        height: 5px;
+        background: linear-gradient(90deg, rgba(153, 153, 153, 0.00) 0%, #FFF 100%);
+
+    }
+
+    header #texttop span {
+        display: flex;
+        color: #FFF;
+        font-family: "Bebas Neue";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    header #texttop #line2 {
+        display: none;
+        width: 273px;
+        height: 5px;
+        background: linear-gradient(90deg, #FFF 0%, rgba(153, 153, 153, 0.00) 100%);
+
+    }
+
+    header h1 {
+
+        align-self: center;
+        color: rgba(232, 220, 196, 0.20);
+        text-align: center;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: rgba(232, 220, 196, 0.80);
+        font-family: "Bebas Neue";
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+
+    }
+
+    header #bottons {
+        display: flex;
+        flex-direction: column;
+        height: 116px;
+        justify-content: center;
+        gap: 15px;
+        align-self: stretch;
+        align-items: center;
+    }
+
+    #seccionSobrenosotros article h2 {
+        align-self: stretch;
+        color: #FFF;
+        text-align: center;
+        font-family: "Bebas Neue";
+        font-size: 30px;
+        padding: 0 10px;
+        font-style: normal;
+        font-weight: 400;
+
+
+    }
+
+    #seccionSobrenosotros article p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+
+        line-height: normal;
+        border-top: 2px solid #FFF;
+        border-bottom: 2px solid #FFF;
+        padding: 0 100px;
+    }
+
+    #seccionInfo h2 {
+        align-self: stretch;
+
+
+        color: #FFF;
+        text-align: center;
+        font-family: "Bebas Neue";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    #seccionInfo {
+        padding: 40px 20px;
+        gap: 15px;
+    }
+
+    #seccionInfo h2 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    #seccionInfo h3 {
+        font-size: 29px;
+        line-height: 1.1;
+    }
+
+    #seccionInfo span {
+        font-size: 21px;
+    }
+
+    #seccionInfo p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 10px 0 20px;
+    }
+
+    #seccionInfo article {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #seccionInfo article .info {
+        width: 100%;
+        gap: 12px;
+    }
+
+    #seccionInfo article .info span {
+        font-size: 32px;
+    }
+
+    #seccionInfo article .info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #seccionCategorias {
+        padding: 35px 18px;
+        gap: 25px;
+    }
+
+    #seccionCategorias #textos {
+        gap: 12px;
+    }
+
+    #seccionCategorias #textos h2 {
+        font-size: 55px;
+        line-height: 1;
+    }
+
+    #seccionCategorias #textos p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    #seccionCategorias #textos h3 {
+        font-size: 30px;
+        display: none;
+    }
+
+
+
+    #seccionCategorias article .categoria {
+        width: 100%;
+        min-height: 320px;
+        padding: 15px;
+        gap: 5px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #seccionCategorias article .categoria .info {
+        flex: 1;
+    }
+
+    #seccionCategorias article .categoria .info h4 {
+        font-size: 24px;
+    }
+
+    #seccionCategorias article .categoria .info h3 {
+        font-size: 34px;
+    }
+
+    #seccionCategorias article .categoria .info p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    #seccionCategorias article .categoria img {
+        width: 38%;
+        max-height: 280px;
+    }
+
+    #seccionCategorias h2 {
+        font-size: 37px;
+        line-height: 1.1;
+        opacity: 0;
+    }
+
+    .seccionZonas {
+        min-height: 390px;
+        padding: 45px 18px;
+    }
+
+
+    .seccionZonas .todocontent .text h2 {
+        font-size: 65px;
+    }
+
+    .seccionZonas .todocontent .text p {
+        font-size: 14px;
+        line-height: 1.7;
+        width: 300px;
+    }
+
+    .seccionZonas .todocontent .text .btnExplorar {
+        width: 200px;
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    .seccionRutas {
+        padding: 40px 20px;
+        gap: 25px;
+    }
+
+    .seccionRutas article {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .seccionRutas article .info {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .seccionRutas article .info h2 {
+        font-size: 65px;
+    }
+
+    .seccionRutas article .info ul {
+        padding-left: 20px;
+    }
+
+    .seccionRutas article .info ul li {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .seccionRutas article .info a {
+        width: 100%;
+        max-width: 230px;
+        min-height: 50px;
+        font-size: 16px;
+    }
+
+    .seccionRutas article h3 {
+        width: 100%;
+        max-width: none;
+        min-height: 250px;
+        font-size: 48px;
+        border-width: 4px;
+    }
+
+    .seccionRutas p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .seccionExperencia {
+        padding: 60px 20px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccionExperencia .imagenesExperencias {
+        width: fit-content;
+    }
+
+    .seccionExperencia .imagenesExperencias img {
+        height: 150px;
+    }
+
+    .seccionExperencia p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 5px 0 15px;
+        width: 300px;
+    }
+
+    #seccionPratrocinadores {
+        padding: 55px 20px;
+        gap: 12px;
+    }
+
+    #seccionPratrocinadores h2 {
+        font-size: clamp(50px, 13vw, 70px);
+    }
+
+    #seccionPratrocinadores h3 {
+        font-size: clamp(25px, 6vw, 32px);
+    }
+
+    #seccionPratrocinadores p {
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 10px 0 15px;
+    }
+
+    #seccionUniforme {
+        padding: 35px 22px 65px;
+
+    }
+
+    #seccionUniforme h2 {
+        font-size: clamp(105px, 25vw, 150px);
+
+    }
+
+    #seccionUniforme article {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #seccionUniforme article img {
+
+        width: 85%;
+        max-width: 330px;
+    }
+
+    #seccionUniforme #info1 {
+
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #seccionUniforme #info2 {
+
+        width: 100%;
+        max-width: none;
+        align-items: center;
+        text-align: center;
+    }
+
+    #seccionUniforme #info1 h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    #seccionUniforme #info2 h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    #seccionUniforme #info1 p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    #seccionUniforme #info2 p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    #seccionUniforme #forma {
+        display: none;
+    }
+
+    #seccionFanzone {
+        display: flex;
+        height: 1000px;
+        padding: 0 41px 0 72px;
+        align-items: baseline;
+        gap: -200px;
+        background: #131313;
+    }
+
+    #seccionFanzone article {
+
+        height: 1065.882px;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    #seccionFanzone article #fanzone1 {
+        width: 788px;
+        height: 992px;
+        transform: scale(0.40) rotate(-3.461deg);
+        aspect-ratio: 85/107;
+        position: absolute;
+        z-index: 3;
+
+
+        cursor: pointer;
+        left: -260px;
+        transition: all 1s;
+    }
+
+    #seccionFanzone article #fanzone2 {
+        width: 691.329px;
+        height: 871.848px;
+        transform: scale(0.35) rotate(15deg);
+        aspect-ratio: 157/198;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: -260px;
+        color: #000;
+        filter: brightness(60%);
+        cursor: pointer;
+        transition: all 1s;
+    }
+
+    #seccionFanzone article #fanzone2:hover {
+
+        transform: scale(0.65) rotate(20deg);
+    }
+
+    #seccionFanzone article #fanzone1:hover {
+
+        transform: scale(0.75);
+    }
+
+    #seccionFanzone article #fanzone3 {
+        width: 619.671px;
+        height: 780.359px;
+        transform: scale(0.30) rotate(-15deg);
+        aspect-ratio: 27/34;
+        position: absolute;
+        z-index: 1;
+        left: -260px;
+        top: 10px;
+        filter: brightness(40%);
+        cursor: pointer;
+    }
+
+    #seccionFanzone p {
+        align-self: stretch;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        margin-bottom: 50px;
+        z-index: 5;
+    }
+
+    #seccionGaleria #imagenestodo #text h4 {
+        margin: 0 0 10px;
+        width: 100%;
+
+        color: #FFF;
+        font-family: "Bebas Neue";
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    #seccionGaleria #imagenestodo #text p {
+        margin: 0;
+        max-width: 150px;
+        color: #FFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    footer #infotodo {
+
+        width: 100%;
+        display: flex;
+        padding: 50px clamp(20px, 7vw, 100px);
+
+        align-items: center;
+        gap: 10px;
+
+    }
+
+}
